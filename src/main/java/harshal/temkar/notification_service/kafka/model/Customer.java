@@ -1,15 +1,18 @@
 package harshal.temkar.notification_service.kafka.model;
 
+import java.io.Serializable;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+@SuppressWarnings("serial")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class CustomerKafka {
+public class Customer implements Serializable {
 
 	private String id;
 	
